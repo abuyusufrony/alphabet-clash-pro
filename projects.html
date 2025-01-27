@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mail Profit</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <main>
+        <section>
+            <div class="input-container flex flex-col items-center gap-10 mt-5 ">
+
+                <div onclick="chnageBg()" class=""><input type="text" placeholder=" New Mail amount" id="newmail"
+                        class="input input-bordered input-accent w-full max-w-xs  " />
+                </div>
+
+                <div class="">
+                    <input type="text" placeholder="Old Mail Amount" id="oldmail"
+                        class="input input-bordered input-accent w-full max-w-xs" />
+
+
+                </div>
+                <div class="">
+                    <input type="text" placeholder="Sent Money Amount" id="sentMoney"
+                        class="input input-bordered input-accent w-full max-w-xs" />
+                </div>
+
+
+
+                <div>
+                    <button onclick="mailProfit()" class="btn btn-active btn-secondary">Get Profit</button>
+                </div>
+            </div>
+            </div>
+
+        </section>
+        <div class="flex flex-col text-center  items-center mt-5">
+            <div
+                class="artboard artboard-horizontal phone-6 bg-[#bc12]  text-5xl oppins-semibold flex flex-col justify-center">
+                <p>Total mail price in usdt: <span id="usdt">0</span> <span>$</span></p>
+                <p>total BDT= <span id="bdt"></span></p>
+                <p>Total profit In BDT= <span id="totalTaka">0</span></p>
+            </div>
+
+        </div>
+
+        <button> Hit Me</button>
+
+    </main>
+    <script src="script/mail.js"></script>
+
+</body>
+
+</html>
